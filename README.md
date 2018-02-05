@@ -1,6 +1,6 @@
 # Generating Hfile from TSV/CSV file
 
-## build jar cp/sftp cloudera cdh service
+## Build jar cp/sftp cloudera cdh service
 ```
 mvn clean package
 cp target/import-tsv-0.0.1.jar /opt/cloudera/parcels/CDH-5.13.1-1.cdh5.13.1.p0.2/lib/hbase/lib

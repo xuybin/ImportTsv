@@ -16,7 +16,7 @@ hdfs dfs -put test.csv /tmp/src
 create 'test',{NAME => 'T', VERSIONS => 10},SPLITS => ['3|','6|','9|','c|']  
 ```
 
-## Generating Hfile
+## Generating Hfile (rowkey=HmacMD5(privateKeyStr,column[2]))
 ```
 hbase org.apache.hadoop.hbase.mapreduce.ImportTsv \
 -Dimporttsv.separator=, \

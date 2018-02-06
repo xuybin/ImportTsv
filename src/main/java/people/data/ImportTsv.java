@@ -638,8 +638,8 @@ public class ImportTsv extends Configured implements Tool {
       "  Note: if you do not use this option, then the target table must already exist in HBase\n" +
       "\n" +
       "Other options that may be specified with -D include:\n" +
-      "  -D" + SKIP_LINES_CONF_KEY + "=false - fail if encountering an invalid line\n" +
-      "  -D" + LOG_BAD_LINES_CONF_KEY + "=true - logs invalid lines to stderr\n" +
+      "  -D" + SKIP_LINES_CONF_KEY + "=true - fail if encountering an invalid line\n" +
+      "  -D" + LOG_BAD_LINES_CONF_KEY + "=false - logs invalid lines to stderr\n" +
       "  -D" + SKIP_EMPTY_COLUMNS + "=false - If true then skip empty or null columns in bulk import\n" +
       "  -D" + GENERATE_ROWKEY + "=-1   - If >=0 then user column[index] generate.rowkey:HmacMD5(secretkey,column[index])\n" +
       "  '-D" + HMACMD5_SECRETKEY + "=' - HmacMD5(secretkey,column[index]) Use with -D"+GENERATE_ROWKEY+"\n" +

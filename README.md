@@ -30,6 +30,7 @@ hbase org.apache.hadoop.hbase.mapreduce.ImportTsv \
 -Dimporttsv.columns=HBASE_ROW_KEY,T:a,T:b,T:c \
 -Dgenerate.rowkey=2 \
 -Dhmacmd5.secretKey=privateKeyStr \
+-Dimporttsv.log.bad.lines=true
 -Dimporttsv.bulk.output=/tmp/test \
 'test' /tmp/src/test.csv
 ```
